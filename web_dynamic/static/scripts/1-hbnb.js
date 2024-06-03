@@ -6,7 +6,7 @@ $(document).ready(function() {
     $('.amenity-checkbox').change(function() {
         var amenityId = $(this).closest('li').data('id');
         var amenityName = $(this).closest('li').data('name');
-        
+
         if (this.checked) {
             // Add the Amenity ID to the selectedAmenities array if the checkbox is checked
             selectedAmenities.push(amenityId);
@@ -22,3 +22,4 @@ $(document).ready(function() {
         var amenitiesText = selectedAmenities.map(function(id) {
             return $('li[data-id="' +
 
+~             
